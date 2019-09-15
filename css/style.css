@@ -93,19 +93,15 @@ img.icon {
 	width: 100%;
 }
 
-
-
-
-
 .loader {
-	height: 40px;
-	width: 40px;
+	height: 100px;
+	width: 100px;
 	position: absolute;
 	left: 50%;
-	margin-left: -20px;
+	margin-left: -50px;
 	top: 50%;
-	margin-top: -20px;
-	animation: animate 3s infinite linear;
+	margin-top: -50px;
+
 }
  
 .loader:before,
@@ -113,14 +109,15 @@ img.icon {
 	content: "";
 	height: 50px;
 	width: 50px;
-	border: 8px solid rgba(255,255,255,.5);
+	border: 10px solid rgba(255,255,255, .5);
 	border-radius: 10px;
 	position: absolute;
-	top: 0;
+	top: 15px;
+	left: 15px;
 }
  
 .loader:before {
-	animation: animate 3s infinite linear;
+	animation: animate 5s infinite linear;
 }
  
 @keyframes animate {
@@ -144,10 +141,9 @@ img.icon {
     	transform: rotate(360deg);
   	}
 }
- 
- 
+
 .loader:after {
-	animation: animate2 2s infinite linear;
+	animation: animate 1.5s infinite linear;
 }
 
 .loaderArea {
@@ -160,19 +156,6 @@ img.icon {
 	bottom:0;
 	z-index: 100000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .preview {
 	background-position: center;
