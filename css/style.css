@@ -101,7 +101,6 @@ img.icon {
 	margin-left: -50px;
 	top: 50%;
 	margin-top: -50px;
-
 }
  
 .loader:before,
@@ -274,4 +273,66 @@ img.icon {
 
 .footer span a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 790px) {
+	h2 {
+		letter-spacing: .25em;
+	}
+
+	.d-flex,
+	.items {
+		flex-direction: column;
+	}
+
+	.item {
+		width: 100% !important;
+		margin: 0;
+	}
+
+	.wrapper {
+		margin: 1em auto;
+		width: 70% !important;
+	}
+
+	.cont > p {
+		width: 90%;
+	}
+
+	.preview {
+		padding: 100% 0;
+		background-size: contain;
+	}
+
+	.features .features-items .features-item {
+		margin-top: 1.5em !important;
+	}
+
+	.projects .projects-items:last-child .projects-item:last-child,
+	.portfolio .portfolio-items:last-child .portfolio-item:last-child {
+		display: none;
+	}
+
+	.feedback input,
+	.feedback textarea {
+		margin: .5em auto;
+	}
+
+	.feedback input[type="text"],
+	.feedback input[type="phone"] {
+		width: 75%;
+	}
+
+	.feedback input[type="submit"] {
+		margin-top: 1em;
+		width: 100%;
+	}
+
+	.footer a.d-block {
+		font-size: 1em;
+	}
+
+	.footer span {
+		font-size: 1em;
+	}
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="html">
 	<head>
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#FF0126">
-		<!--<meta name="viewport" content="width=device-width"> -->
+		<meta name="viewport" content="width=device-width">
 		<title>Nulefer - портфолио веб-разработчика</title>
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/jquery.scrollSections.css">
+		<link rel="stylesheet" href="css/jquery.scrollSections.css" id="scrl1">
 		<link href="img/icon.png" rel="shortcut icon">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-		<script src="js/vendor/modernizr-2.5.3.min.js"></script>
+		<script src="js/vendor/modernizr-2.5.3.min.js" id="scrl6"></script>
 	</head>
 	<body>
 		<div class="loaderArea">
@@ -154,20 +154,36 @@
 				<span class="d-block">Designed by <a href="#">Farid Nagiyev</a></span>
 			</div>
 		</section>
-		<script src="js/vendor/jquery-1.7.2.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/jquery.scrollSections.js"></script>
-		<script>
+		<script src="js/vendor/jquery-1.7.2.min.js" id="scrl2"></script>
+		<script src="js/plugins.js" id="scrl3"></script>
+		<script src="js/jquery.scrollSections.js" id="scrl4"></script>
+		<script id="scrl5">
 			$(function() {
 				$('section.scrollsections').scrollSections();
 			});
-
+		</script>
+		<script>
 			$(window).on('load', function () {
     			$preloader = $('.loaderArea'),
       			$loader = $preloader.find('.loader');
     			$loader.fadeOut();
     			$preloader.delay(350).fadeOut('slow');
   			});
+
+			if ($(window).width() < 992) {
+			document.getElementById("scrl1").remove();
+			document.getElementById("scrl2").remove();
+			document.getElementById("scrl3").remove();
+			document.getElementById("scrl4").remove();
+			document.getElementById("scrl5").remove();
+			document.getElementById("scrl6").remove();			
+			document.getElementById('preview').classList.remove("scrollsections", "slide");
+			document.getElementById('features').classList.remove("scrollsections", "slide");
+			document.getElementById('projects').classList.remove("scrollsections", "slide");
+			document.getElementById('portfolio').classList.remove("scrollsections", "slide");
+			document.getElementById('feedback').classList.remove("scrollsections", "slide");
+			document.getElementById('footer').classList.remove("scrollsections", "slide");
+		};
 		</script>
 	</body>
 </html>
