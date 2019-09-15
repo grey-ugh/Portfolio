@@ -159,7 +159,7 @@ img.icon {
 .preview {
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-color: #D0A546;
 	background-image: url(../img/bc.png);
 }
@@ -275,7 +275,7 @@ img.icon {
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 900px) {
 	h2 {
 		letter-spacing: .25em;
 	}
@@ -301,7 +301,6 @@ img.icon {
 
 	.preview {
 		padding: 100% 0;
-		background-size: contain;
 	}
 
 	.features .features-items .features-item {
