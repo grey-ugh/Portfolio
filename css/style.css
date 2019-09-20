@@ -316,6 +316,10 @@ img.icon {
 		letter-spacing: .25em;
 	}
 
+	a.btn {
+		width: 100%;
+	}
+
 	.d-flex,
 	.items {
 		flex-direction: column;
@@ -343,8 +347,7 @@ img.icon {
 		margin-top: 1.5em !important;
 	}
 
-	.projects .projects-items:last-child .projects-item:last-child,
-	.portfolio .portfolio-items:last-child .portfolio-item:last-child {
+	.projects .projects-items:last-child .projects-item:last-child {
 		display: none;
 	}
 
