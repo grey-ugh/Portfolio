@@ -343,7 +343,9 @@ img.icon {
 		padding: 100% 0;
 	}
 
-	.features .features-items .features-item {
+	.features .features-items .features-item,
+	.projects .projects-items .projects-item,
+	.portfolio .portfolio-items .portfolio-item {
 		margin-top: 1.5em !important;
 	}
 
